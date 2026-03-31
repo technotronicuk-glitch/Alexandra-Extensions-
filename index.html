@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandra Extensions | Atelier de Înfrumusețare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'luxury-bg': '#FDFCF9',  /* Warm Alabaster */
+                        'luxury-text': '#1A1A1A', /* Obsidian */
+                        'luxury-gold': '#D9C5A3', /* Brushed Gold */
+                        'luxury-dark': '#111111',
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .serif-italic { font-family: 'Cormorant Garamond', serif; font-style: italic; }
+        .letter-spacing-extra { letter-spacing: 0.35em; }
+        .border-gold-subtle { border-color: rgba(217, 197, 163, 0.3); }
+        a.gold-hover:hover { color: #D9C5A3; }
+    </style>
+</head>
+<body class="bg-luxury-bg text-luxury-text font-sans antialiased">
+
+    <div class="bg-luxury-dark text-white text-[9px] uppercase tracking-[0.4em] py-2.5 text-center font-light">
+        Experiența Premium. Doar pe bază de programare.
+    </div>
+
+    <nav class="border-b border-gold-subtle py-10">
+        <div class="container mx-auto px-8 flex flex-col items-center">
+            <a href="#" class="font-serif text-3xl md:text-4xl leading-none mb-8 tracking-tight text-luxury-text">
+                Alexandra <span class="font-light text-luxury-gold">Extensions</span>
+            </a>
+            <div class="w-24 h-px bg-luxury-gold mb-8 opacity-40"></div>
+            <div class="flex space-x-12 text-[10px] uppercase tracking-[0.3em] font-medium text-stone-600">
+                <a href="#" class="gold-hover transition">Acasă</a>
+                <a href="#atelier" class="gold-hover transition">Atelierul</a>
+                <a href="#colectii" class="gold-hover transition">Măiestrie</a>
+                <a href="#contact" class="gold-hover transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="border-b border-gold-subtle">
+        <div class="grid md:grid-cols-2">
+            <div class="flex items-center justify-center p-12 md:p-24 bg-white">
+                <div class="max-w-xl">
+                    <span class="text-[10px] uppercase tracking-[0.4em] text-luxury-gold mb-6 block font-medium">Concept de Înfrumusețare</span>
+                    <h1 class="font-serif text-5xl md:text-7xl mb-8 leading-[1.1] text-luxury-text">
+                        Arta privirii <br>redefinită. <span class="serif-italic font-light">Iconic.</span>
+                    </h1>
+                    <p class="text-stone-600 text-base mb-12 leading-relaxed font-light max-w-md">
+                        Un sanctuar dedicat perfecțiunii. Alexandra Extensions îmbină tehnici exclusiviste de aplicare fir cu fir cu o estetică impecabilă, pentru un rezultat care transcende tendințele.
+                    </p>
+                    <a href="https://wa.me/407xxxxxxxx" class="inline-block border border-luxury-text px-12 py-5 text-[11px] uppercase tracking-[0.3em] font-medium hover:bg-luxury-text hover:text-white transition duration-300">
+                        Rezervă o Consultanță
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative min-h-[60vh] md:min-h-screen">
+                <img src="https://images.unsplash.com/photo-1595126868128-d8f8959d2979?q=80&w=1400&auto=format&fit=crop" 
+                     alt="Prestige Lash Art" 
+                     class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/10"></div> </div>
+        </div>
+    </section>
+
+    <section id="atelier" class="py-28 bg-white border-b border-gold-subtle">
+        <div class="container mx-auto px-8 text-center max-w-4xl mb-24">
+            <h2 class="font-serif text-5xl text-luxury-text mb-6">Măiestrie în Detalii</h2>
+            <p class="text-stone-500 font-light text-lg leading-relaxed">Fiecare aplicare este un ritual personalizat, menit să îți accentueze frumusețea naturală într-un mod subtil și sofisticat.</p>
+        </div>
+
+        <div class="container mx-auto px-8 grid md:grid-cols-3 gap-16 text-center">
+            <div class="flex flex-col items-center">
+                <div class="w-16 h-16 rounded-full border border-luxury-gold flex items-center justify-center mb-10 opacity-70">
+                   <span class="font-serif text-2xl text-luxury-gold">I</span>
+                </div>
+                <h3 class="font-serif text-2xl mb-5 text-luxury-text">Gene Signature</h3>
+                <p class="text-sm font-light text-stone-600 leading-relaxed">Efecte exclusiviste (Cashmere, Russian Volume) adaptate fizionomiei tale.</p>
+            </div>
+             <div class="flex flex-col items-center">
+                <div class="w-16 h-16 rounded-full border border-luxury-gold flex items-center justify-center mb-10 opacity-70">
+                   <span class="font-serif text-2xl text-luxury-gold">II</span>
+                </div>
+                <h3 class="font-serif text-2xl mb-5 text-luxury-text">Stilizare Arhitecturală</h3>
+                <p class="text-sm font-light text-stone-600 leading-relaxed">Laminare și pensat de precizie pentru sprâncene care definesc chipul.</p>
+            </div>
+             <div class="flex flex-col items-center">
+                <div class="w-16 h-16 rounded-full border border-luxury-gold flex items-center justify-center mb-10 opacity-70">
+                   <span class="font-serif text-2xl text-luxury-gold">III</span>
+                </div>
+                <h3 class="font-serif text-2xl mb-5 text-luxury-text">Atelier Beauty</h3>
+                <p class="text-sm font-light text-stone-600 leading-relaxed">Tratamente faciale premium și servicii de hairstyling couture.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-luxury-dark text-white pt-24 pb-12">
+        <div class="container mx-auto px-8 grid md:grid-cols-4 gap-16">
+            <div class="col-span-1 md:col-span-2">
+                <h4 class="font-serif text-3xl mb-8 leading-none">Alexandra <span class="font-light text-luxury-gold">Extensions</span></h4>
+                <p class="text-stone-500 max-w-sm text-sm leading-relaxed mb-10 font-light">
+                    Sanctuarul tău pentru o privire de impact. Descoperă standardul de aur în extensiile de gene și stilizarea sprâncenelor în București.
+                </p>
+                <a href="tel:+407xxxxxxxx" class="text-luxury-gold text-xs uppercase tracking-[0.3em] gold-hover transition font-medium">Contact Atelier</a>
+            </div>
+            
+            <div>
+                <h4 class="text-[10px] font-medium uppercase text-stone-600 mb-8 tracking-[0.4em]">Locații Prestige</h4>
+                <ul class="text-[12px] text-stone-400 leading-8 uppercase font-medium tracking-[0.25em] list-none p-0">
+                    <li>Atelier București (Nord)</li>
+                    <li class="font-light text-stone-600">(Doar Programări)</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-[10px] font-medium uppercase text-stone-600 mb-8 tracking-[0.4em]">Urmărește Estetica</h4>
+                <div class="flex space-x-5">
+                    <div class="w-9 h-9 border border-stone-800 rounded-full flex items-center justify-center text-xs text-stone-500 hover:border-luxury-gold hover:text-luxury-gold cursor-pointer transition">IG</div>
+                    <div class="w-9 h-9 border border-stone-800 rounded-full flex items-center justify-center text-xs text-stone-500 hover:border-luxury-gold hover:text-luxury-gold cursor-pointer transition">FB</div>
+                    <div class="w-9 h-9 border border-stone-800 rounded-full flex items-center justify-center text-xs text-stone-500 hover:border-luxury-gold hover:text-luxury-gold cursor-pointer transition">TK</div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-24 pt-10 border-t border-stone-900 text-center text-[9px] text-stone-700 tracking-[0.5em] uppercase font-light">
+            &copy; 2026 Alexandra Extensions & Beauty Concept. Experiență Exclusivistă.
+        </div>
+    </footer>
+
+</body>
+</html>
