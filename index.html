@@ -95,12 +95,20 @@
         </div>
     </section>
 
-    <section style="text-align: center; margin: 50px 0; font-family: sans-serif;">
-  <h2 style="color: #333;">Vezi cum lucrăm</h2>
-  <video width="80%" style="max-width: 800px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" controls>
+    <section style="text-align: center; margin: 50px 0; font-family: sans-serif; width: 100%;">
+  <h2 style="font-family: serif; color: #333; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px;">
+    Vezi cum lucrăm
+  </h2>
+  
+  <video 
+    controls 
+    poster="shopping.png"
+    style="width: 80%; max-width: 800px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); display: block; margin: 0 auto;"
+  >
     <source src="beauty_clean.mp4.mp4" type="video/mp4">
     Browser-ul tău nu suportă formatul video.
   </video>
+</section>
 </section>
 
     <section id="atelier" class="py-28 bg-white border-b border-gold-subtle">
@@ -109,15 +117,48 @@
             <p class="text-stone-500 font-light text-lg leading-relaxed">Fiecare aplicare este un ritual personalizat, menit să îți accentueze frumusețea naturală într-un mod subtil și sofisticat.</p>
         </div>
 
-<section style="margin: 50px 0; font-family: sans-serif;">
-  <h2 style="text-align: center; color: #333;">Portofoliu Gene</h2>
-  <div style="display: flex; overflow-x: auto; gap: 15px; padding: 20px; scroll-behavior: smooth;">
+<section style="margin: 80px 0; font-family: 'serif', sans-serif; overflow: hidden; background: #fff;">
+  <h2 style="text-align: center; color: #333; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 40px;">
+    Portofoliu Gene & Estetică
+  </h2>
+
+  <div style="width: 100%; overflow: hidden; position: relative;">
     
-    <img src="gene1.jpg" alt="Extensii Gene Fir cu Fir" style="height: 350px; border-radius: 10px; flex-shrink: 0;">
-    <img src="gene2.jpg" alt="Extensii Gene Volum" style="height: 350px; border-radius: 10px; flex-shrink: 0;">
-    <img src="shopping.png" alt="Rezultat Extensii" style="height: 350px; border-radius: 10px; flex-shrink: 0;">
-    <img src="gene4.jpg" alt="Lashes Style" style="height: 350px; border-radius: 10px; flex-shrink: 0;">
-    
+    <div class="slider-track" style="display: flex; width: calc(350px * 16); animation: scroll 40s linear infinite;">
+      
+      <img src="gene1.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="gene2.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="shopping.png" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="gene4.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="gene5.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="gene6.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="gene7.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="gene8.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+
+      <img src="gene1.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="gene2.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="shopping.png" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="gene4.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="gene5.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="gene6.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="gene7.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      <img src="gene8.jpg" style="height: 350px; width: 300px; object-fit: cover; margin: 0 10px; border-radius: 10px;">
+      
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-320px * 8)); } /* Se mișcă exact cu lățimea celor 8 poze */
+}
+
+/* Oprește mișcarea când clientul pune mouse-ul pe poze */
+.slider-track:hover {
+  animation-play-state: paused;
+}
+</style>
   </div>
   <p style="text-align: center; color: #888; font-size: 0.9em;">(Glisează stânga-dreapta pentru a vedea mai multe)</p>
 </section>
