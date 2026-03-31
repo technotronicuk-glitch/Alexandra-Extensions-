@@ -70,29 +70,60 @@
         </div>
     </nav>
 
-    <section class="border-b border-gold-subtle">
-        <div class="grid md:grid-cols-2">
-            <div class="flex items-center justify-center p-12 md:p-24 bg-white">
-                <div class="max-w-xl">
-                    <span class="text-[10px] uppercase tracking-[0.4em] text-luxury-gold mb-6 block font-medium">Concept de Înfrumusețare</span>
-                    <h1 class="font-serif text-5xl md:text-7xl mb-8 leading-[1.1] text-luxury-text">
-                        Arta privirii <br>redefinită. <span class="serif-italic font-light">Iconic.</span>
-                    </h1>
-                    <p class="text-stone-600 text-base mb-12 leading-relaxed font-light max-w-md">
-                        Un sanctuar dedicat perfecțiunii. Alexandra Extensions îmbină tehnici exclusiviste de aplicare fir cu fir cu o estetică impecabilă, pentru un rezultat care transcende tendințele.
-                    </p>
-                    <a href="https://wa.me/40728541046" class="inline-block border border-luxury-text px-12 py-5 text-[11px] uppercase tracking-[0.3em] font-medium hover:bg-luxury-text hover:text-white transition duration-300">
+    <section class="border-b border-stone-100 overflow-hidden">
+    <div class="grid md:grid-cols-2 min-h-screen">
+        
+        <div class="flex items-center justify-center p-8 md:p-24 bg-white">
+            <div class="max-w-xl animate-fade-in">
+                <span class="text-[10px] uppercase tracking-[0.5em] text-luxury-gold mb-8 block font-semibold opacity-80">
+                    Concept de Înfrumusețare Exclusivist
+                </span>
+                
+                <h1 class="font-serif text-5xl md:text-8xl mb-10 leading-[1.05] text-stone-900 tracking-tight">
+                    Arta privirii <br><span class="italic font-light text-stone-800">redefinită.</span> <br>
+                    <span class="text-luxury-gold tracking-[0.2em] uppercase text-sm font-sans block mt-4">Iconic Studio</span>
+                </h1>
+                
+                <p class="text-stone-500 text-base md:text-lg mb-14 leading-relaxed font-light max-w-sm border-l-2 border-luxury-gold pl-6">
+                    Un sanctuar dedicat perfecțiunii. Alexandra Extensions îmbină tehnici exclusiviste de aplicare fir cu fir cu o estetică impecabilă.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="https://wa.me/40728541046" 
+                       class="inline-block bg-stone-900 text-white px-12 py-6 text-[11px] uppercase tracking-[0.4em] font-medium hover:bg-luxury-gold transition-all duration-500 text-center">
                         Rezervă o Consultanță
                     </a>
                 </div>
             </div>
-            
-            <div class="relative min-h-[60vh] md:min-h-screen">
-                <img src="shopping.png.avif" alt="Eye and Hair Extensions Gallery">
-                     alt="Prestige Lash Art" 
-                     class="absolute inset-0 w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/10"></div> </div>
         </div>
+        
+        <div class="relative bg-stone-100 overflow-hidden">
+            <img src="shopping.png" 
+                 alt="Prestige Lash Art Alexandra Extensions" 
+                 class="absolute inset-0 w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[2000ms] ease-out">
+            
+            <div class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent"></div>
+            <div class="absolute inset-0 bg-stone-900/5"></div>
+        </div>
+        
+    </div>
+</section>
+
+<style>
+    /* Smooth fade-in for the text when the page loads */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+        animation: fadeIn 1.5s ease-out forwards;
+    }
+    
+    /* Custom Luxury Gold Color if not defined in your Tailwind */
+    .text-luxury-gold { color: #B8860B; }
+    .border-luxury-gold { border-color: #B8860B; }
+    .hover\:bg-luxury-gold:hover { background-color: #B8860B; }
+</style>
     </section>
 
     <section style="text-align: center; margin: 50px 0; font-family: sans-serif; width: 100%;">
